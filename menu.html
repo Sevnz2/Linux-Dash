@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+</head>
+<body>
+    <nav>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="offscreen-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+        const offscreenMenu = document.querySelector('.offscreen-menu');
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offscreenMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
