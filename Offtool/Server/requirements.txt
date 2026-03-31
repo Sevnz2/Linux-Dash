@@ -1,0 +1,6 @@
+fastapi
+pydantic
+psutil
+sqlmodel
+passlib[bcrypt]
+jwt
